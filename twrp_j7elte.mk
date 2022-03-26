@@ -2,6 +2,8 @@
 PRODUCT_RELEASE_NAME := j7elte
 
 # Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from our custom product configuration

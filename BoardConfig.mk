@@ -61,6 +61,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 
+# Rsync error fix or Fixing trying to copy non-existance files
+TARGET_COPY_OUT_VENDOR := vendor
+
 # Partitions
 BOARD_HAS_NO_MISC_PARTITION:= false
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
